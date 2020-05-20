@@ -9,3 +9,8 @@ Now it only includes 3 layouts, (default, page, post) and 3 plugins (feed, sitem
 ### Usage
 1. Clone or fork
 2. Edit `_config.yml` with your site information.
+
+
+Start with:
+
+`bundle exec jekyll s --baseurl="/"`
