@@ -2,27 +2,20 @@
   <data class="" href="{{ "/" | relative_url }}"></data>
 
   <div class="">
-
     <h2 class="">{{ site.title | escape }}</h2>
 
-    <div class="">
-      <div class="">
-        <ul class="">
-          <li class="">
-            {%- if site.author -%}
-              {{ site.author | escape }}
-            {%- else -%}
-              {{ site.title | escape }}
-            {%- endif -%}
-            </li>
-            {%- if site.email -%}
-            <li><a class="" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-            {%- endif -%}
-        </ul>
-      </div>
+    <ul class="">
+      <li class="">
+        {%- if site.author -%}
+          {{ site.author | escape }}
+        {%- else -%}
+          {{ site.title | escape }}
+        {%- endif -%}
+      </li>
 
-    </div>
-
+      {%- if site.email -%}
+        <li><a class="" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+      {%- endif -%}
+    </ul>
   </div>
-
 </footer>
